@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker' 
 20.times do 
-	item =Item.create( title:Faker::Creature::Cat.name,
+	item =Item.create!( title:Faker::Creature::Cat.name,
 		description:Faker::Creature::Cat.breed,
 		price:Faker::Number.decimal(l_digits: 3, r_digits: 3),
 		image_url: "http://lorempixel.com/640/480/cats",
