@@ -1,24 +1,41 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TEAM: BRAIN-CLUB
 
-Things you may want to cover:
+Projet: e-commerce
 
-* Ruby version
+Les membres de notre équipe: 
 
-* System dependencies
+Nom :Léon 
+Prenom : Chris Stone
+github: https://github.com/chris241
+slack: ChrisTHP
 
-* Configuration
 
-* Database creation
+Nom : RAKOTONOMENJANAHARY
+Prenom :
+github: https://github.com/menja-coder
+slack:Menja
 
-* Database initialization
+Nom : RAKOTONINDRINA
+Prenom : Arotiana Fehizoro
+github:https://github.com/AroRk226
+slack: Aro
 
-* How to run the test suite
+Nom :RAKOTOVAO	
+Prenom : Ronick	Michael
+github:https://github.com/kin-coder
+slack:kin
 
-* Services (job queues, cache servers, search engines, etc.)
+Nom :RAZANAJATOVO
+Prenom :Nanirisoa Nambinina
+github:https://github.com/Nam-9
+slack:RAZANAJATOVO Nanirisoa Nambinina
 
-* Deployment instructions
+Nom : RAZANAKOTO
+Prenom :Tsirimanana Jean Luc
+github:https://github.com/TsiryJL
+slack: Razanakoto Tsirimanana Jean Luc
 
-* ...
+
+
