@@ -1,10 +1,13 @@
 class Item < ApplicationRecord
+<<<<<<< HEAD
 
+=======
+>>>>>>> eaa26490a6e2d91dc7a1182756f4528a04a5d77d
 
-	validates :title, presence: true, length: { in: 5..10 }
-	validates :description, presence: true, length: { in: 10..200 }
+	validates :title, presence: true, length: { in: 2..10 }
+	validates :description, presence: true, length: { in: 5..200 }
 	validates :price, presence: true
-	URL_REGEXP = /A^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$Z/ix
+	  URL_REGEXP = /\A^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$\z/ix
 	validates :image_url, presence: true, format: { with: URL_REGEXP, message: 'You provided invalid URL'}
 end
 
