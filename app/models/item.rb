@@ -1,5 +1,4 @@
 class Item < ApplicationRecord
-end
 
 	validates :title, presence: true, length: { in: 5..10 }
 	validates :description, presence: true, length: { in: 10..200 }
