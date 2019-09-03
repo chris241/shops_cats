@@ -10,17 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_02_125935) do
+ActiveRecord::Schema.define(version: 2019_09_03_070611) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "carts", force: :cascade do |t|
     t.bigint "user_id"
-    t.bigint "item_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["item_id"], name: "index_carts_on_item_id"
     t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
@@ -31,6 +29,15 @@ ActiveRecord::Schema.define(version: 2019_09_02_125935) do
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "joins", force: :cascade do |t|
+    t.bigint "item_id"
+    t.bigint "cart_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["cart_id"], name: "index_joins_on_cart_id"
+    t.index ["item_id"], name: "index_joins_on_item_id"
   end
 
   create_table "users", force: :cascade do |t|
