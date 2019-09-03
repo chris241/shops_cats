@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -74,63 +75,17 @@
         <div id="tab-1" data-tab-title="First" class="tab-content current">
           <div class="cards">
 
-
+            <%@items.each do |item|%>
             <div class="card">
               <img src="http://lorempixel.com/640/480/cats">
               <div class="cardContent">
-                <h2>Title of Card</h2>
-                <button>View</button>
+                <h2><%=item.title%><br></h2>
+                <%=link_to "cliquez ici", item.image_url ,target: "_blank"%>
+                <button><%=link_to "show", item_path(item.id) %></button>
               </div>
             </div>
-            <div class="card">
-              <img src="http://www.leparisien.fr/resizer/74wMQIeXKLDUKuKvSzJQME_0ULg=/932x582/arc-anglerfish-eu-central-1-prod-leparisien.s3.amazonaws.com/public/KNVYKZBDTTOXNO37FEVDTD5DJU.jpg">
-              <div class="cardContent">
-                <h2>Title of Card</h2>
-                <button>View</button>
-              </div>
-            </div>
-            <div class="card">
-              <img src="https://img.20mn.fr/PjhCn1N4Rn6adxh9ZIYrxQ/310x190_chat-illustration.jpg">
-              <div class="cardContent">
-                <h2>Title of Card</h2>
-                <button>View</button>
-              </div>
-            </div>
-            <div class="card">
-              <img src="https://cidadesportuguesas.com/wp-content/uploads/2018/09/cidade-de-chaves-portugal.jpg">
-              <div class="cardContent">
-                <h2>Title of Card</h2>
-                <button>View</button>
-              </div>
-            </div>
-            <div class="card">
-              <img src="https://s2.glbimg.com/VOLYVgo7bLWfvuHAJ2WkPeNYmws=/600x800/i.glbimg.com/og/ig/infoglobo1/f/original/2017/02/07/blog_forest_high.jpg">
-              <div class="cardContent">
-                <h2>Title of Card</h2>
-                <button>View</button>
-              </div>
-            </div>
-            <div class="card">
-              <img src="https://i0.wp.com/catalogodeviagens.net/wp-content/uploads/2016/11/canterbury-11.jpg">
-              <div class="cardContent">
-                <h2>Title of Card</h2>
-                <button>View</button>
-              </div>
-            </div>
-            <div class="card">
-              <img src="https://www.urbanarts.com.br/imagens/produtos/169507/0/Ampliada/cidade-sao-paulo-lespassants.jpg">
-              <div class="cardContent">
-                <h2>Title of Card</h2>
-                <button>View</button>
-              </div>
-            </div>
-            <div class="card">
-              <img src="https://media-cdn.tripadvisor.com/media/vr-splice-j/06/e8/69/2a.jpg">
-              <div class="cardContent">
-                <h2>Title of Card</h2>
-                <button>View</button>
-              </div>
-            </div>
+            <%end%>
+
 
           </div>
         </div>
@@ -251,3 +206,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!-- <script type="text/javascript" src="./packs/photochat.js"></script> -->
 </html>
+=======
+<h1>Items#index</h1>
+<p>Find me in app/views/items/index.html.erb</p>
+
+
+
+
+
+>>>>>>> developpement
