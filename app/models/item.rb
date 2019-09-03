@@ -3,8 +3,6 @@ class Item < ApplicationRecord
 	validates :description, presence: true, length: { in: 10..200 }
 	validates :price, presence: true
 	validates :image_url, presence: true
-
-
-	has_many :joins
-	has_many :carts, through: :joins
+	
+	has_many :carts
 end
