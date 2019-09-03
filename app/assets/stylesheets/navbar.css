@@ -1,0 +1,126 @@
+* {
+  box-sizing:border-box;
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+body {
+  background:
+  linear-gradient(
+  	rgba(0,0,0,0.1),
+  	rgba(0,0,0,0.1)
+  	),
+  url("https://media.istockphoto.com/vectors/cat-background-seamless-pattern-with-cute-playing-kitten-vector-id534111700");
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin-top:0;
+  font-family: 'Open Sans', sans-serif;
+  opacity: 3%;
+}
+.header-img{
+
+}
+header {
+  width:100%;
+  background-color:#F7F9F9;
+  font-size: 20px;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  position:relative;
+
+}
+#menu-bar {
+  width:auto;
+  float: left;
+  margin:0;
+  padding:0;
+  text-transform: uppercase;
+  height:50px;
+}
+
+nav ul {
+  display:inline-block;
+  float:left;
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+nav ul li {
+  float:left;
+  display:inline-block;
+  background-color:none;
+  margin:15px;
+}
+
+nav ul li a {
+  color:#515151;
+  font-size:20px;
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  transition: 0.3s ease;
+
+}
+nav .menu li a:hover {
+  border-top: 2px solid #004d40;
+  border-bottom: 2px solid #004d40;
+  padding: 6px 0;
+}
+nav ul li a:active {
+  background:#515151;
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+nav #social_button {
+  position:absolute;
+  float:right;
+  right:0;
+}
+
+nav #social_button li a {
+  color: yellow;
+}
+nav #social_button li a:hover{
+  color: #004d40;
+}
+
+  @media all and (max-width: 768px){
+    .toggle + a,
+    .menu {
+      display:none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1;
+    }
+    .toggle {
+      display:block;
+      padding:10px 5px;
+      border:none;
+      cursor:pointer;
+    }
+    [id^=drop]:checked + ul {
+		  display: block;
+	  }
+    nav ul li {
+      float:none;
+      padding: 0;
+      margin:0;
+      width: auto;
+      display: block;
+    }
+    nav ul li a {
+      font-size:.8em;
+      padding:10px 0;
+      display:block;
+    }
+    nav #social_button ul li{
+    float:left;
+    right:0;
+    padding:5px;
+    }
+}

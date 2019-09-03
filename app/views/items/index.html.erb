@@ -1,7 +1,136 @@
-<h1>Items#index</h1>
-<p>Find me in app/views/items/index.html.erb</p>
-<%@items.each do |item|%>
-<%=item.title%><br>
-<%=link_to "cliquez ici", item.image_url ,target: "_blank"%>
-<%=link_to "show", item_path(item.id) %>
-<%end%>
+<section class="container">
+
+    <div class="containerTitles">
+      <h1>CHATS A VENDRE</h1>
+    </div>
+
+    <div class="component-systemTabs">
+      <div class="tabs-container">
+        <ul class="tabs"></ul>
+
+        <div id="tab-1" data-tab-title="First" class="tab-content current">
+          <div class="cards">
+
+            <%@items.each do |item|%>
+            <div class="card">
+              <img src="<%=item.image_url%>">
+              <div class="cardContent">
+                <h2><%=item.title%><br></h2>
+                <button><%=link_to "show", item_path(item.id) %></button>
+              </div>
+            </div>
+            <%end%>
+
+
+          </div>
+        </div>
+
+
+
+        <div id="tab-2" data-tab-title="Second" class="tab-content">
+          <div class="cards">
+
+            <div class="card">
+              <img src="http://lorempixel.com/640/480/cats">
+              <div class="cardContent">
+                <h2>Title of Card</h2>
+                <button>View</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://www.verabernardes.com.br/vista.imobi/fotos/40382/iN6j7O79I7Rm389pgd_403825bf982c3a2036.jpg">
+              <div class="cardContent">
+                <h2>Title of Card</h2>
+                <button>View</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="http://www.imobiliariacostarocha.com.br/v4/wp-content/uploads/2018/06/e2ce8370-5db7-4641-addc-450e5556227a.jpg">
+              <div class="cardContent">
+                <h2>Title of Card</h2>
+                <button>View</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="http://www.gazetadevotorantim.com.br/arquivos/noticias/23831/dec1ad15d66984775685fce7e425005e.jpg">
+              <div class="cardContent">
+                <h2>Title of Card</h2>
+                <button>View</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="tab-3" data-tab-title="Third" class="tab-content">
+          <div class="cards">
+
+            <div class="card">
+              <img src="http://www.redetiradentes.com.br/ronaldotiradentes/wp-content/uploads/2018/10/cidade-suja.jpg">
+              <div class="cardContent">
+                <h2>Title of Card</h2>
+                <button>View</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="http://3.bp.blogspot.com/_8HQJkDJu6Pk/TOMy5IBWt-I/AAAAAAAAAAU/VcqiBhy0foA/s1600/Monteiro+-+igreja+matriz.JPG">
+              <div class="cardContent">
+                <h2>Title of Card</h2>
+                <button>View</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.pinimg.com/originals/a1/6b/5e/a16b5e59e25c31bba4baab0ae9d43ffb.jpg">
+              <div class="cardContent">
+                <h2>Title of Card</h2>
+                <button>View</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://eventosemjoinville.com.br/wp-content/uploads/2019/03/JCVB_presstrip-document%C3%A1rio-russo-600x800.jpg">
+              <div class="cardContent">
+                <h2>Title of Card</h2>
+                <button>View</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="tab-4" data-tab-title="Fourth" class="tab-content">
+          <div class="cards">
+
+            <div class="card">
+              <img src="https://cidadesportuguesas.com/wp-content/uploads/2018/09/cidade-de-fafe-portugal.jpg">
+              <div class="cardContent">
+                <h2>Title of Card</h2>
+                <button>View</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://chavesandaround.files.wordpress.com/2018/07/braga_cidade_portugal-23.jpg?w=672&h=896">
+              <div class="cardContent">
+                <h2>Title of Card</h2>
+                <button>View</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://www.bustamantemaquetes.com.br/maquetes/imagens/maquete-cidade-de-joinville-turistica/foto-de-maquete-fisica-de-Tematicas-em-SC-0.jpg">
+              <div class="cardContent">
+                <h2>Title of Card</h2>
+                <button>View</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://4.bp.blogspot.com/-u3cSWCW8cZ0/W-3ORzclUeI/AAAAAAAAJiE/26MNqtk7XZIFBQREZSwfzWYNXIG4O__MQCLcBGAs/s1600/hum-croacia%2B%25285%2529.JPG">
+              <div class="cardContent">
+                <h2>Title of Card</h2>
+                <button>View</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
