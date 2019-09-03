@@ -1,4 +1,8 @@
 class Item < ApplicationRecord
+<<<<<<< HEAD
+
+=======
+>>>>>>> eaa26490a6e2d91dc7a1182756f4528a04a5d77d
 
 	validates :title, presence: true, length: { in: 2..10 }
 	validates :description, presence: true, length: { in: 5..200 }
