@@ -1,6 +1,6 @@
 # README
 
-Groupe 1
+Group1
 
 TEAM: BRAIN-CLUB
 

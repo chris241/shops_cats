@@ -5,18 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require 'faker' 
-20.times do 
-	item =Item.create!( title:Faker::Creature::Cat.name,
+require 'faker'
+20.times do
+	item =Item.create(title:Faker::Creature::Cat.name,
 		description:Faker::Creature::Cat.breed,
 		price:Faker::Number.decimal(l_digits: 3, r_digits: 3),
-		image_url: "http://lorempixel.com/640/480/cats",
+		image_url: "http://lorempixel.com/640/480/cats"
 		)
-end	
+end
 
 
 puts"ready"
-
-		            
-  
-
