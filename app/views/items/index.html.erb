@@ -1,7 +1,30 @@
-<h1>Items#index</h1>
-<p>Find me in app/views/items/index.html.erb</p>
-<%@items.each do |item|%>
-<%=item.title%><br>
-<%=link_to "cliquez ici", item.image_url ,target: "_blank"%>
-<%=link_to "show", item_path(item.id) %>
-<%end%>
+<!--########################-->
+<!--####   container  ######-->
+<!--########################-->
+<section class="container">
+  <div class="containerTitles">
+    <h1>CHATS A VENDRE</h1>
+  </div>
+
+  <div class="component-systemTabs">
+    <div class="tabs-container">
+      <ul class="tabs"></ul>
+
+      <div id="tab-1" data-tab-title="First" class="tab-content current">
+        <div class="cards">
+
+          <%@items.each do |item|%>
+            <div class="card">
+              <img src="<%=item.image_url%>">
+              
+              <div class="cardContent">
+                <h2><%=item.title%><br></h2>
+                <button><%=link_to "show", item_path(item.id) %></button>
+              </div>
+            </div>
+          <%end%>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
