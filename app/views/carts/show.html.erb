@@ -1,20 +1,19 @@
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">ID</th>
-      <th scope="col">Produits</th>
-      <th scope="col">Prix</th>
-    </tr>
-  </thead>
-  <tbody>
-    <%@carts.each do |cart|%>
-    <tr>
 
-      <th scope="row"><%=cart.id%></th>
-      <td><%=cart.item.title%></td>
-      <td><%=cart.item.price%></td>
- 
-    </tr>
-    <%end%>
-  </tbody>
+<h1>Voici les articles dans ton panier:</h1>
+
+<table class="table">
+ <thead class="thead-dark">
+   <tr>
+     <th scope="col">Produits</th>
+     <th scope="col">Prix</th>
+   </tr>
+ </thead>
+ <tbody>
+   <% @tab.each do |tab| %> <th scope="row">  </th>
+   <tr>
+     <td><%=tab.title %></td>
+     <td><%=tab.price%></td>
+   </tr>
+   <%end%>
+ </tbody>
 </table>
