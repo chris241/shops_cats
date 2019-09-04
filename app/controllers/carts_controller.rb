@@ -12,7 +12,7 @@ class CartsController < ApplicationController
      end
  end
  def show
- 	@carts = Cart.all
+    @carts = Cart.all
 
  end
 end
