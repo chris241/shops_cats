@@ -12,6 +12,7 @@
       <!-- Bouttons loading -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="kitUI.css">
+
   </head>
 
   <body>
@@ -24,7 +25,7 @@
       <div class="topnav">
         <% if user_signed_in? %>
           <div class="navigation">
-              <a href="<%= items_path %>">Acceuil</a>
+              <a href="<%= items_path %>">Accueil</a>
               <a href="<%= cart_path(current_user) %>">Pannier</a>
               <a href="#contact">Contact</a>
               <a href="#about">About</a>   
@@ -55,7 +56,9 @@
               </div>
           </div> 
         <% end %>
+        
       </div>
+      
       <!-- navBar right  -->
 
 <!-- insertion images chats-->
