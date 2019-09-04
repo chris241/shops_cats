@@ -21,6 +21,7 @@ class CartsController < ApplicationController
 
  end
 
+
  # def destroy
  # @cart = Cart.find(params[:user_id])
  #  j = JoinCartItem.where(cart_id: @cart.id) 
@@ -28,6 +29,7 @@ class CartsController < ApplicationController
  #    @cart.destroy
  #  redirect_to root_path  
  # end
+
 
 
 
