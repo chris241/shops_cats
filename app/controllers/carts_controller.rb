@@ -4,7 +4,7 @@ class CartsController < ApplicationController
     @i=session[:item_id]
 
 
-    @cart = Cart.create(user_id: @u, item_id: @i)
+    @cart = Cart.create(id:@u, user_id: @u, item_id: @i)
      if @cart.save
        redirect_to '/'
      else
