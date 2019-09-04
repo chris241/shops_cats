@@ -1,27 +1,18 @@
 class CartsController < ApplicationController
   def create
-    @item = params[:id]
-    @cart = Cart.create(user:current_user, item:@item)
+    @u=current_user.id
+    @i=session[:item_id]
 
+
+    @cart = Cart.create(user_id: @u, item_id: @i)
      if @cart.save
-
-     redirect_to '/'
-
+       redirect_to '/'
      else
-
-    
+     puts "Try again"
      end
  end
+ def show
 
 
-
-
-
-
-
-
-
-
-  def show
-  end
+ end
 end
