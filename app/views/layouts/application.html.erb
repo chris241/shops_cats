@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
@@ -20,13 +20,23 @@
           <!-- ## Navbar ## -->
           <!-- ########### -->
        <!-- navBar top  -->
+
       <div class="topnav">
+        <% if user_signed_in? %>
           <div class="navigation">
               <a href="<%= items_path %>">Acceuil</a>
               <a href="<%= cart_path(current_user) %>">Pannier</a>
               <a href="#contact">Contact</a>
               <a href="#about">About</a>   
           </div>
+          <% else %>
+            <div class="navigation">
+              <a href="<%= items_path %>">Acceuil</a>
+              <a href="#">Pannier</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>   
+          </div>
+          <% end %>
         
         <% if user_signed_in? %>
             <div class="dropdown">
