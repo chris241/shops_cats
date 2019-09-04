@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+	before_action :authenticate_user!
   def create
     @u=current_user.id
     @i=session[:item_id]
