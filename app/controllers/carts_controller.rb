@@ -4,9 +4,15 @@ class CartsController < ApplicationController
     @i=session[:item_id]
    
 
-    @cart = Cart.create( user_id: @u,
-                         item_id: @i,
-                         id: @user_session )
+
+
+    if current_user.cart == nil
+      @cart = Cart.create(user_id: @u)
+    end
+
+    @cart = JoinCartItem.create(cart_id:current_user.cart.id, item_id: @i)
+
+
      if @cart.save
        redirect_to '/'
      else
@@ -14,16 +20,11 @@ class CartsController < ApplicationController
      end
  end
 
+
+
  def show
-    @carts = Cart.all
+   @cart = Cart.find(params[:id])
+   @tab=@cart.items
  end
-  
- def count
-    @price.each do |price|
-        @count = price += 1
-    end
- end
-
-
 
 end
