@@ -16,22 +16,25 @@ class CartsController < ApplicationController
  def show
    @cart = Cart.find(params[:id])
    @tab= @cart.items
-    price = 0
-    @count = price+=1
+   allitems = current_user.cart.items
+       c = 0
+    allitems.each do |item|
+       c += item.price
+    @count = c   
+     end  
+  end
+
+ def destroy
+  @cart = Cart.find(current_user.cart.id)
+  @join = @cart.join_cart_items[0].destroy
+ 
+  redirect_to cart_path  
+ end
+
+
+
 
  end
 
 
- # def destroy
- # @cart = Cart.find(params[:user_id])
- #  j = JoinCartItem.where(cart_id: @cart.id) 
- #    j.destroy_all 
- #    @cart.destroy
- #  redirect_to root_path  
- # end
-
-
-
-
-end
-
+ 

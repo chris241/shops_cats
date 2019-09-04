@@ -15,12 +15,20 @@
      
     <td><%=tab.title %></td>
      <td><%=tab.price%></td>
-     <td><%=@count%></td>
+   
       <td>
       <%= link_to "delete",cart_path(@cart.id) ,method: :delete , class: "btn btn-warning"%>
     </td>
    </tr>
    <%end%>
+    
+    <tr style="background-color: grey;">
+   <td  scope="col">Prix total</td>
+   
+    <td scope="col"><%=@count.to_f%> €</td>
+  </tr>
+  
+   
  </tbody>
 
 </table>
