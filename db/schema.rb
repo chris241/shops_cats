@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(version: 2019_09_04_082253) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-
   create_table "join_cart_items", force: :cascade do |t|
     t.bigint "cart_id"
     t.bigint "item_id"
@@ -68,7 +67,6 @@ ActiveRecord::Schema.define(version: 2019_09_04_082253) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
-
 
   add_foreign_key "join_cart_items", "carts"
   add_foreign_key "join_cart_items", "items"
