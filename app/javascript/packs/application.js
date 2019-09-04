@@ -15,7 +15,7 @@ require("packs/test.js")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-//require turbolinks
+
 //= require jquery3
 //= require jquery_ujs
 //= require_tree .
