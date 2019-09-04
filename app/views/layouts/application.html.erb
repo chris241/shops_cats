@@ -9,6 +9,7 @@
       <%= csp_meta_tag %>
       <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
       <!-- Bouttons loading -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="kitUI.css">
@@ -23,6 +24,7 @@
 
       <div class="topnav">
         <% if user_signed_in? %>
+
           <div class="navigation">
               <a href="<%= items_path %>">Acceuil</a>
               <a href="<%= cart_path(current_user) %>">Pannier</a>
@@ -45,6 +47,7 @@
                   <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
                 </div>
             </div>
+
 
         <% else %>
           <div class="dropdown">
