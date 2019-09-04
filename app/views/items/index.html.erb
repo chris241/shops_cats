@@ -16,10 +16,10 @@
           <%@items.each do |item|%>
             <div class="card">
               <img src="<%=item.image_url%>">
-              
+
               <div class="cardContent">
                 <h2><%=item.title%><br></h2>
-                <button><%=link_to "show", item_path(item.id) %></button>
+              <%=link_to "show", item_path(item.id), class:"btn btn-primary" %>
               </div>
             </div>
           <%end%>
