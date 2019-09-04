@@ -6,7 +6,7 @@ class CartsController < ApplicationController
 
     @cart = Cart.create(user_id: @u, item_id: @i)
      if @cart.save
-       redirect_to '/'
+       redirect_to root_path
      else
      puts "Try again"
      end
