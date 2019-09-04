@@ -17,9 +17,9 @@ class CartsController < ApplicationController
      end
  end
 
-
  def show
    @cart = Cart.find(params[:id])
    @tab=@cart.items
  end
+ 
 end
