@@ -1,8 +1,18 @@
-<h1>Carts#show</h1>
-<p>Find me in app/views/carts/show.html.erb</p>
-<%= form_tag url_for(action: 'create'), method: "post" do %>
-            <%= submit_tag "Ajouter à mon panier" %>
-        <% end %>
+<h1>Voici les articles dans ton panier:</h1>
 
-
-<%= @item.id%>
+<table class="table">
+ <thead class="thead-dark">
+   <tr>
+     <th scope="col">Produits</th>
+     <th scope="col">Prix</th>
+   </tr>
+ </thead>
+ <tbody>
+   <% @tab.each do |tab| %> <th scope="row">  </th>
+   <tr>
+     <td><%=tab.title %></td>
+     <td><%=tab.price%></td>
+   </tr>
+   <%end%>
+ </tbody>
+</table>
