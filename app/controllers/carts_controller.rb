@@ -2,29 +2,34 @@ class CartsController < ApplicationController
   def create
     @u=current_user.id
     @i=session[:item_id]
-   
-
-
-
-    if current_user.cart == nil
+  if current_user.cart == nil
       @cart = Cart.create(user_id: @u)
     end
-
-    @cart = JoinCartItem.create(cart_id:current_user.cart.id, item_id: @i)
-
-
-     if @cart.save
+        @cart = JoinCartItem.create(cart_id:current_user.cart.id, item_id: @i)
+  if @cart.save
        redirect_to '/'
      else
      puts "Try again"
      end
  end
 
-
-
  def show
    @cart = Cart.find(params[:id])
-   @tab=@cart.items
+   @tab= @cart.items
+    price = 0
+    @count = price+=1
+
  end
 
+ # def destroy
+ # @cart = Cart.find(params[:user_id])
+ #  j = JoinCartItem.where(cart_id: @cart.id) 
+ #    j.destroy_all 
+ #    @cart.destroy
+ #  redirect_to root_path  
+ # end
+
+
+
 end
+
