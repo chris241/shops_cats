@@ -18,23 +18,22 @@ class CartsController < ApplicationController
    @tab= @cart.items
    allitems = current_user.cart.items
        c = 0
+    @nbr= allitems.length   
     allitems.each do |item|
        c += item.price
-    @count = c   
-     end  
+    @count = c
+     end
+
   end
 
  def destroy
   @cart = Cart.find(current_user.cart.id)
   @join = @cart.join_cart_items[0].destroy
- 
-  redirect_to cart_path  
+
+  redirect_to cart_path
  end
 
 
 
 
  end
-
-
- 

@@ -23,7 +23,7 @@ class OrdersController < ApplicationController
      if @commandes.save
        @cart = Cart.find(current_user.cart.id)
        @join = @cart.join_cart_items.destroy_all
-       redirect_to order_path(@order.id)
+       redirect_to cart_path(current_user.cart.id)
     else
       puts "Try again"
     end

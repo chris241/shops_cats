@@ -28,14 +28,14 @@
 
           <div class="navigation">
               <a href="<%= items_path %>">Acceuil</a>
-              <a href="<%= cart_path(current_user) %>">Pannier</a>
+              <a href="<%= cart_path(current_user) %>" style='font-size:30px; position:absolute; top:12px; left:1340px;'>🛒</a>
               <a href="#contact">Contact</a>
               <a href="#about">About</a>
           </div>
           <% else %>
             <div class="navigation">
               <a href="<%= items_path %>">Acceuil</a>
-              <a href="#">Pannier</a>
+              <a href="#" >🛒</a>
               <a href="#contact">Contact</a>
               <a href="#about">About</a>
           </div>
@@ -64,6 +64,8 @@
       <!-- navBar right  -->
       </header>
 <!-- insertion images chats-->
+  <div class="nombre"><%=@nbr%></div>
+
     <%= yield %>
 
 <!--######################################-->
