@@ -16,9 +16,6 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
-
-
-
 /* Add a black background color to the top navigation *//***************/
 .topnav {
     background-color: #333;
@@ -50,7 +47,7 @@ body{
 
   /* Barre de recherche  */
 
-  nav form{
+  nav {
       float: right;
       size: 15px;
       padding:10px 10px 10px;
@@ -69,7 +66,7 @@ body{
   
   }
 
-.info{
+.info{                                  
     border-color: #2196F3;
     color: #2196F3;
   }
@@ -104,7 +101,7 @@ body{
   .buttonload {
     background-color: transparent; 
     border: none;
-    color: rgb(252, 216, 13); 
+    color: rgb(236, 252, 13); 
     padding: 15px 16px; 
     font-size: 1cm;
     font-family: magiera; 
@@ -261,12 +258,6 @@ body{
 /****************       Sign-up and sign-in   *********************/
 /****************************************************************/
 
-
-.form-signin{
-  margin-top:40px;
-  margin-left: 25%;
-  
-}
 .button-center{
   text-align: center;
 }
@@ -305,7 +296,7 @@ div.potin{
   margin: auto;
   padding: auto;
 }
-
+s
 #potins{
   color:#ee7614 ;
   font-family: Alyanda ;
@@ -315,4 +306,8 @@ div.potin{
 .flex-container {
 display: flex;
 flex-wrap: wrap;
+}
+
+div.container{
+  width: 20cm;
 }
