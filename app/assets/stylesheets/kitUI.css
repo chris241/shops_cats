@@ -298,7 +298,7 @@ div.potin{
   margin: auto;
   padding: auto;
 }
-s
+
 #potins{
   color:#ee7614 ;
   font-family: Alyanda ;
@@ -320,3 +320,67 @@ div.container{
   text-align: left;
 
 }
+
+div a.pannier{
+  font-size:30px; 
+  position:absolute; 
+  top:8px; 
+  left:1200px
+}
+
+body#background-signup{
+  background-image: url('back-sign.jpg');
+}
+
+body#background-signup p{
+  position:relative;
+  left:450px;
+  top:20px;
+}
+body#background-signup h3{
+    color: white;
+}
+
+body#background-signup .field{
+    color: white;
+}
+
+body#background-signup .container{
+  position: absolute;
+  background: black;
+  background: rgba(3,31,32,0.7) ;
+  width: 45%;
+  top: 12% ;
+  margin-left: 10px;
+  
+}
+
+/*****************************************/
+
+body#background-siginin{
+  background-image: url('log.jpg');
+}
+
+body#background-siginin p{
+  position:relative;
+  left: 590px;
+  top:385px;
+  color: white;
+}
+
+body#background-siginin .h3{
+  color: white;
+}
+
+body#background-siginin .field{
+  color: white;
+}
+
+body#background-siginin .container{
+  position: absolute;
+  background: black;
+  background: rgba(3,31,32,0.5);
+  top: 12% ;
+  left: 10px ;
+}
+
