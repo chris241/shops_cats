@@ -25,14 +25,14 @@
         <% if user_signed_in? %>
           <div class="navigation">
               <a href="<%= items_path %>">Acceuil</a>
-              <a href="<%= cart_path(current_user) %>">Pannier</a>
+              <a href="<%= cart_path(current_user) %>">🛒</a>
               <a href="#contact">Contact</a>
               <a href="#about">About</a>   
           </div>
           <% else %>
             <div class="navigation">
               <a href="<%= items_path %>">Acceuil</a>
-              <a href="#">Pannier</a>
+              <a href="#">🛒</a>
               <a href="#contact">Contact</a>
               <a href="#about">About</a>   
           </div>
@@ -42,6 +42,7 @@
             <div class="dropdown">
               <button class="dropbtn">Connexion</button>
                 <div class="dropdown-content">
+                  <%= link_to "Profil", "/profil" %>
                   <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
                 </div>
             </div>  

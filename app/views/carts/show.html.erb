@@ -11,8 +11,10 @@
    <% @tab.each do |tab| %> <th scope="row">  </th>
    <tr>
      <td><%=tab.title %></td>
-     <td><%=tab.price%></td>
+     <td><%=tab.price%> $ </td>
    </tr>
    <%end%>
  </tbody>
 </table>
+
+<%= link_to "Passer commande", class: "btn btn-info", type:"button",method: :POST %>
