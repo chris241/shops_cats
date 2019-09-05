@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  
-  <style>
-    p{
+<style type="">
+  p{
       position:relative;
-      left:450px;
+      left:45px;
       top:20px;
     }
     .h3{
@@ -18,28 +11,20 @@
     .field{
         color: white;
     }
-    body{
-      background-image: url('https://images6.alphacoders.com/334/334727.jpg');
-    }
-
     .container{
       position: absolute;
       background: black;
       background: rgba(3,31,32,0.7) ;
-      width: 45%;
-      top: 12% ;
-      margin-left: 10px;
-      
+      top: 25% ;
+      left: 25% ;
+      margin-left:10px; 
+      border-radius: 40px;
     }
-  </style>
 
-  <body>
-
+</style>
     <div class="container">
         <div class="col-md-6 offset-md-3">
-          <br><br><br>
-
-      <!-- <h2>Sign up</h2> -->
+        </br>
 
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <h1 class="h3 mb-3 font-weight-normal text-center">Sign up</h1>
@@ -71,6 +56,4 @@
           <% end %>
         </div>
       </div>
-  </body>
-</html>
 

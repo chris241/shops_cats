@@ -18,8 +18,9 @@ body{
 }
 
 .topnav {
-    background-color: #333;
+     background: rgba(3,31,52,0.7) ;
     text-decoration: none;
+  
     
   }
   
