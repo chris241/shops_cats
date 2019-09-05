@@ -29,3 +29,10 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.nbr_count {
+  position: absolute;
+  top: 0px;
+  left: 1228px;
+  color: red;
+}
