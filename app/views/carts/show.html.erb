@@ -13,9 +13,10 @@
    <tr>
      <td><%=tab.title %></td>
      <td><%=tab.price%></td>
-     <td>
-      <%= link_to "delete",cart_path(@cart.id) ,method: :delete , class: "btn btn-warning"%>
-     </td>
+      <td>
+      <%= link_to "Enlever du panier",cart_path(@cart.id) ,method: :delete , class: "btn btn-warning"%>
+    </td>
+
    </tr>
    <%end%>
 
