@@ -24,12 +24,6 @@
           <td >Prix total</td>
           <td ><%=@count.to_f%> €</td>
           <td>
-            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                    data-description="Paiement"
-                    data-amount="500"
-                    data-currency="eur"
-                    data-locale="auto"></script>
             <%= link_to "Passer Commande", orders_path, class:"btn btn-success", method: :POST, style: "width:auto"%>
           </td>
         </tr>
