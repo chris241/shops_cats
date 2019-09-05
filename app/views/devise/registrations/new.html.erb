@@ -4,38 +4,34 @@
     <meta charset="utf-8">
     <title></title>
   </head>
+  
   <style>
+    p{
+      position:relative;
+      left:450px;
+      top:20px;
+    }
+    .h3{
+        color: white;
+    }
 
-   p{
-  position:relative;
-  left:450px;
-  top:20px;
-
-            }
-.h3{
-  color: white;
-}
-
-.field{
-  color: white;
-}
+    .field{
+        color: white;
+    }
 
 
-body{
-  background-image: url(https://previews.123rf.com/images/voren1/voren11606/voren1160600017/60457759-deux-chatons-avec-un-chat-isol%C3%A9-sur-un-fond-blanc-.jpg);
-}
+    body{
+        background-image: url(https://previews.123rf.com/images/voren1/voren11606/voren1160600017/60457759-deux-chatons-avec-un-chat-isol%C3%A9-sur-un-fond-blanc-.jpg);
+    }
 
-  .container{
-    position: absolute;
-    background: black;
-    background: rgba(3,31,32,0.5) ;
-    width: 40% ;
-   
-    top: 12% ;
-    left: 30% ;
-     
-  }
-
+    .container{
+      position: absolute;
+      background: black;
+      background: rgba(3,31,32,0.5) ;
+      width: 50%;
+      top: 12% ;
+      left: 20% ;
+    }
   </style>
 
   <body>
@@ -70,9 +66,10 @@ body{
         <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
       </div></br>
 
-      <div class="actions">
-        <%= f.submit "Sign up", class: "btn btn-lg btn-primary btn-block" %>
+      <div class="actions button-center">
+        <%= f.submit "Sign up", class: "btn btn-primary " %>
       </div>
+      <br />
     <% end %>
 
     <%= render "devise/shared/links" %>

@@ -13,11 +13,10 @@
       <!-- Bouttons loading -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="kitUI.css">
-
+    <link rel="icon" href="https://img.icons8.com/clouds/100/000000/cat.png">
   </head>
 
   <body>
-
     <header>
           <!-- ############ -->
           <!-- ## Navbar ## -->
@@ -25,48 +24,44 @@
        <!-- navBar top  -->
 
       <div class="topnav">
-      <% if user_signed_in? %>
-          <div class="navigation">
-              <a href="<%= items_path %>">Accueil</a>
-              <a href="<%= cart_path(current_user) %>">Pannier</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
-          </div>
-
-        <% else %>
-         
-          <div class="navigation">
-              <a href="<%= items_path %>">Acceuil</a>
-              <a href="#">Pannier</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
-          </div>
-        <% end %>
-        
         <% if user_signed_in? %>
+            <div class="navigation">
+                <a href="<%= items_path %>">Accueil</a>
+                <a href="<%= cart_path(current_user) %>">Pannier</a>
+                <a href="#contact">Contact</a>
+           
+            </div>
+
+          <% else %>
+          
+            <div class="navigation">
+                <a href="<%= items_path %>">Acceuil</a>
+                <a href="#">Pannier</a>
+                <a href="#contact">Contact</a>
+               
+            </div>
+          <% end %>
+          
+          <% if user_signed_in? %>
+              <div class="dropdown">
+                <button class="dropbtn">Connexion</button>
+                  <div class="dropdown-content">
+                    <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+                  </div>
+              </div>
+          <% else %>
             <div class="dropdown">
               <button class="dropbtn">Connexion</button>
                 <div class="dropdown-content">
-                  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+                  <%= link_to "Sign in", new_user_session_path %>
+                  <%= link_to "Sign up", new_user_registration_path %>
                 </div>
             </div>
-
-
-
-        <% else %>
-          <div class="dropdown">
-            <button class="dropbtn">Connexion</button>
-              <div class="dropdown-content">
-                <%= link_to "Sign in", new_user_session_path %>
-                <%= link_to "Sign up", new_user_registration_path %>
-              </div>
-          </div>
-        <% end %>
-        
-      </div>
+          <% end %>
+        </div>
       
       <!-- navBar right  -->
-      </header>
+    </header>
 <!-- insertion images chats-->
     <%= yield %>
 
