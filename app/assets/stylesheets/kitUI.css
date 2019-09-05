@@ -17,7 +17,6 @@ body{
   background-attachment: fixed;
 }
 
-/* Add a black background color to the top navigation *//***************/
 .topnav {
     background-color: #333;
     text-decoration: none;
@@ -67,7 +66,7 @@ body{
   
   }
 
-.info{
+.info{                                  
     border-color: #2196F3;
     color: #2196F3;
   }
@@ -259,11 +258,14 @@ body{
 /****************       Sign-up and sign-in   *********************/
 /****************************************************************/
 
+<<<<<<< HEAD
 
 .form-signin{
 
   
 }
+=======
+>>>>>>> developpement
 .button-center{
   text-align: center;
 }
