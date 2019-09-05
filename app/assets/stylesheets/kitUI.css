@@ -10,12 +10,7 @@ header{
     text-align: center;
 }
 
-body{
-  background-image: url(sign.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
+
 
 .topnav {
      background: rgba(3,31,52,0.7) ;
