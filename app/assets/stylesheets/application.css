@@ -30,10 +30,10 @@
   flex-wrap: wrap;
 }
 
-.nombre{
-
+.nbr_count {
   position: absolute;
-  top: 0.5%;
-  left: 95%;
+  top: 0px;
+  left: 1228px;
   color: red;
 }
+
