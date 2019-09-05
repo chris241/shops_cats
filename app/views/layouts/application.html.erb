@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="kitUI.css">
   </head>
-
   <body>
+    <header>
 
           <!-- ############ -->
           <!-- ## Navbar ## -->
@@ -24,7 +24,6 @@
 
       <div class="topnav">
         <% if user_signed_in? %>
-
           <div class="navigation">
               <a href="<%= items_path %>">Acceuil</a>
               <a href="<%= cart_path(current_user) %>">Pannier</a>
@@ -39,7 +38,6 @@
               <a href="#about">About</a>
           </div>
           <% end %>
-
         <% if user_signed_in? %>
             <div class="dropdown">
               <button class="dropbtn">Connexion</button>
@@ -47,8 +45,6 @@
                   <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
                 </div>
             </div>
-
-
         <% else %>
           <div class="dropdown">
             <button class="dropbtn">Connexion</button>
@@ -60,7 +56,7 @@
         <% end %>
       </div>
       <!-- navBar right  -->
-
+      </header>
 <!-- insertion images chats-->
     <%= yield %>
 
