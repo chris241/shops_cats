@@ -1,5 +1,4 @@
 class CartsController < ApplicationController
-	before_action :authenticate_user!
   def create
     @u=current_user.id
     @i=session[:item_id]
@@ -18,6 +17,7 @@ class CartsController < ApplicationController
    @cart = Cart.find(params[:id])
    @tab= @cart.items
    allitems = current_user.cart.items
+
    c = 0
    @nbr = allitems.length
    session[:nbr] = @nbr
@@ -25,6 +25,7 @@ class CartsController < ApplicationController
        c += item.price
        @count = c
      end
+
   end
  def destroy
   @cart = Cart.find(current_user.cart.id)
@@ -33,3 +34,4 @@ class CartsController < ApplicationController
   redirect_to cart_path
  end
 end
+

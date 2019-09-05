@@ -16,10 +16,15 @@ class ChargesController < ApplicationController
       amount: @amount,
       description: 'Payement enligne',
       currency: 'eur',
+
     })
+
+    @cart = Cart.find(current_user.cart.id)
+    @join = @cart.join_cart_items.destroy_all
+    redirect_to cart_path(@cart.id)
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
-    redirect_to new_charge_path
+    # redirect_to new_charge_path
   end
 end

@@ -26,8 +26,10 @@
       <div class="topnav">
         <% if user_signed_in? %>
           <div class="navigation">
+
               <a href="<%= items_path %>">Accueil</a>
-              <a href="<%= cart_path(current_user) %>" class="pannier">🛒</a>
+              <a href="<%= cart_path(current_user) %>" style="font-size:30px; position:absolute; top:8px; left:1200px">🛒</a>
+
               <a href="#contact">Contact</a>
               <a href="#about">About</a>
           </div>
@@ -37,7 +39,8 @@
           <% else %>
             <div class="navigation">
               <a href="<%= items_path %>">Accueil</a>
-              <a href="#" class="pannier">🛒</a>
+              <a href="#" style="font-size:30px; position:absolute; top:8px; left:1200px">🛒</a>
+
               <a href="#contact">Contact</a>
               <a href="#about">About</a>
           </div>
@@ -60,9 +63,11 @@
         <% end %>
       </div>
       <!-- navBar right  -->
-    
+
     </header>
 <!-- insertion images chats-->
+  <div class="nombre"><%=@nbr%></div>
+
     <%= yield %>
 
 <!--######################################-->
