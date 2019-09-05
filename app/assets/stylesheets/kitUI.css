@@ -192,12 +192,12 @@ header{
   border: none;
   cursor: pointer;
   position: relative;
-  left: 500px;
+  left: 400px;
 }
 
 #dropbtn  {
   position: absolute;
-  left: 500px;
+  left: 400px;
   text-align: left;
 
 }

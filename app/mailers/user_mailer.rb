@@ -9,7 +9,7 @@ class UserMailer < ApplicationMailer
     @url  = 'https://www.mailjet.com' 
 
     # c'est cet appel à mail() qui permet d'envoyer l’e-mail en définissant destinataire et sujet.
-    mail(to: @user.email, subject: 'Bienvenue chez nous !') 
+    mail(to: current_user.email, subject: 'Bienvenue chez nous !') 
   end
 
   def order_email(user)
@@ -20,7 +20,7 @@ class UserMailer < ApplicationMailer
       	join = JoinOrderItem.find_by(order_id: ord.id)
       	@items.push(Item.find(join.item_id))
       end
-      mail(to: @user.email , subject: 'Banc de commande')
+      mail(to: @user , subject: 'Commande')
     end
 
     def admin_report_email(user)
