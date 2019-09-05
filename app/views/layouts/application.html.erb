@@ -46,6 +46,7 @@
             <div class="dropdown">
               <button class="dropbtn">Connexion</button>
                 <div class="dropdown-content" id = "dropbtn">
+                  <%= link_to "Profil", "/profil" %>
                   <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
                 </div>
             </div>
