@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
  get 'users/show'
 
 resources :carts, only:[:create, :show, :destroy]
