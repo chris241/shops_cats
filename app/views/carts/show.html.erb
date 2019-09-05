@@ -11,8 +11,8 @@
    <% @tab.each do |tab| %>
    <th scope="row">  </th>
    <tr>
-     <td><%=tab.title %></td>
-     <td><%=tab.price%></td>
+     <td><%=tab.title%></td>
+     <td><%=tab.price%> €</td>
       <td>
       <%= link_to "Enlever du panier",cart_path(@cart.id) ,method: :delete , class: "btn btn-warning" , style: "width:auto"%>
     </td>
