@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
- get 'users/show'
+ # 
+ resources :orders,only:[:create, :show, :destroy]
 resources :carts, only:[:create, :show, :destroy]
 resources :items, only: [:show, :index]
  root 'items#index'

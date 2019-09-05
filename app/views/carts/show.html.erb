@@ -17,7 +17,8 @@
      <td><%=tab.price%></td>
    
       <td>
-      <%= link_to "Enlever du panier",cart_path(@cart.id) ,method: :delete , class: "btn btn-warning"%>
+     
+      <%=link_to "Enlever du panier",cart_path(@cart.id)  ,class:"btn btn-info", type:"button",method: :delete%>
     </td>
    </tr>
    <%end%>
@@ -32,3 +33,4 @@
  </tbody>
 
 </table>
+ <%=link_to "Passer au commande", orders_path,class:"btn btn-info", type:"button",method: :POST%>
