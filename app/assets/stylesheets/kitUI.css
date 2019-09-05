@@ -433,6 +433,16 @@ h1#title-table{
   font-family: chilanka;
   color: white;
 }
-section#view-img{
+body#view-img{
   text-align: center;
+  background-image: url('show.jpg');
+  background-size: cover;
+}
+
+.card{
+  margin: 10px;
+}
+
+#show-center{
+  margin-left: 25%;
 }
