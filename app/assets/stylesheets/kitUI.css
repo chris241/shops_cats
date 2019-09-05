@@ -327,6 +327,9 @@ div a.pannier{
   top:8px; 
   left:1200px
 }
+/********************/
+/*    BACKGROUND     /
+/********************/
 
 body#background-signup{
   background-image: url('back-sign.jpg');
@@ -384,3 +387,49 @@ body#background-siginin .container{
   left: 10px ;
 }
 
+body#show-pannier{
+  background-image: url(table.jpg)
+}
+/********************/
+/*    Tableau       /
+/********************/
+
+table, th, td{
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin:20px;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+th{
+  background-color: rgba(8, 8, 7, 0.692);
+  height: 50px;
+  text-align: left;
+  color: rgb(24, 241, 223);
+}
+
+td{
+  background-color: rgba(20, 20, 20, 0.466);
+  color: white;
+  height: 60px;
+  vertical-align: bottom;
+}
+
+tbody tr:hover{
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(28, 211, 211, 0.5);
+}
+
+tr#total{
+  background-color: rgb(2, 2, 2);
+  background-color: rgba(136, 95, 34, 0.5);
+}
+
+h1#title-table{
+  text-align: center;
+  font-size: 50px;
+  font-family: chilanka;
+  color: white;
+}
