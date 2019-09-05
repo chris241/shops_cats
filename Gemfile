@@ -5,7 +5,7 @@ ruby '2.6.3'
 
 
 gem 'devise'
-
+gem 'stripe'
 gem 'table_print'
 gem 'faker'
 gem 'dotenv-rails'
