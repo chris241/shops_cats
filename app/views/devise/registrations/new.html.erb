@@ -4,7 +4,7 @@
         <br><br><br>
 
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-        <h1 class="h3 mb-3 font-weight-normal text-center">Sign up</h1>
+        <h1 class="h3 mb-3 font-weight-normal text-center"><div id="mdf">Sign up</div></h1>
 
         <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -25,7 +25,7 @@
           <%= f.label :password_confirmation %><br />
           <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
         </div></br>
-
+      <div id="mdf">
         <div class="actions button-center">
           <%= f.submit "Sign up", class:"btn btn-outline-info" %>
         </div>

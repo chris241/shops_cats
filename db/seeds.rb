@@ -14,5 +14,4 @@ require 'faker'
 		)
 end
 
-
-puts"ready"
+puts"Ready!!"
