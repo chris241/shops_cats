@@ -43,6 +43,11 @@ ActiveRecord::Schema.define(version: 2019_09_06_053700) do
     t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
+  create_table "charges", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "items", force: :cascade do |t|
     t.string "title"
     t.text "description"
