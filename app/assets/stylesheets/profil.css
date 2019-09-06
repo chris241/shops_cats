@@ -12,6 +12,7 @@ h3{
     position: absolute;
     top:13%;
     left: 84%;
+    color: white;
 
 }
 
@@ -19,6 +20,7 @@ h1{
     position: absolute;
     top:10%;
     left: 25%;
+    color: aliceblue;
 }
 
 .entete{
@@ -26,6 +28,7 @@ h1{
     position: absolute;
     top:20%;
     left: 22%;
+    color: white
 
 }
 
@@ -34,12 +37,30 @@ h1{
     position: absolute;
     top:25%;
     left: 22%;
+    color: white
 }
 
 .btnAjour{
 
     position: absolute;
+    top:39%;
+    left: 22%;
+
+}
+
+.btnChoix{
+    
+    position: absolute;
     top:35%;
-    left: 32%;
+    left: 22%;
+    b
+}
+
+.btn-outline-success{
+
+    position: absolute;
+    top:45%;
+    left: 22%;
+
 
 }

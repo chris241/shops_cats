@@ -16,6 +16,9 @@
 
   <h3>Photo</h3>
 <%= form_tag user_avatars_path(@user), multipart: true do %>
-  <%= file_field_tag :avatar %>
-  <div class="btnAjour"><%= submit_tag "mettre à jour" %></div>
+
+  <div class="btnChoix"><%= file_field_tag :avatar %></div>
+
+
+  <div class="btnAjour" ><%= submit_tag "mettre à jour" %></div>
 <% end %>
