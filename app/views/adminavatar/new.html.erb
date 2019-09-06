@@ -1,0 +1,13 @@
+
+
+<%= form_tag  item_adminavatar_index_path(params[:item_id]), method: "post", multipart: true do %>
+  <%= file_field_tag :adminavatar , class:'file' %>
+  <%= submit_tag "mettre à jour" %>
+  <% end %>
+
+
+
+
+
+
+ 

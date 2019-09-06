@@ -7,3 +7,19 @@
 
   <%=link_to "ajouter au panier",carts_path ,class:"btn btn-primary", type:"button",method: :POST%>
 </div>
+
+
+<%if @item.adminavatar.attached?%>
+    <%= image_tag @item.adminavatar, alt: 'avatar',style:"width: 550px;height:600px"  %>
+<%else%>
+    <p>THIS ITEM DON'T HAVE PICTURE</p>
+                                
+<%end%>
+                            
+<h3>Upload new photo ?</h3>
+    <%= form_tag  item_adminavatar_index_path(@item.id), multipart: true do %>
+    <%= file_field_tag :avatar %>
+    <%= submit_tag "mettre à jour" %>
+
+<%end%>
+
