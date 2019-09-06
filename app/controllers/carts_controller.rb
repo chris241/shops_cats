@@ -21,17 +21,14 @@ class CartsController < ApplicationController
 	      @item = Item.find(session[:item_id])
 	      @cart = Cart.find(params[:id])
 	      @tab= @cart.items
-	        allitems = current_user.cart.items
-
+	      allitems = current_user.cart.items
 	      c = 0
 	      @nbr = allitems.length
 	      session[:nbr] = @nbr
-
 	      allitems.each do |item|
 	          c += item.price
 	          @count = c
 	      end
-
 	      session[:total_price]=@count
 	  end
 
