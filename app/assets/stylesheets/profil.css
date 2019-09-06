@@ -27,7 +27,7 @@ h1{
     position: absolute;
     top:10%;
     left: 35%;
-    color: rgb(216, 214, 110);
+    color: rgb(20, 223, 13);
     
 }
 
@@ -43,14 +43,15 @@ h1{
 }
 .num{
 
+    font-size: 130%;
     position: absolute;
-    top:30%;
-    left: 22%;
+    top:32%;
+    left: 27%;
     color: white
 
 }
 .mail{
-
+    font-size: 130%;
     position: absolute;
     top:27%;
     left: 27%;
