@@ -33,7 +33,13 @@
 .nbr_count {
   position: absolute;
   top: 0px;
-  left: 1228px;
-  color: red;
+  left: 95%;
+  color: rgb(255, 0, 0);
 }
 
+ body{
+  background-image: url(sign.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

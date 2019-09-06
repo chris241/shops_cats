@@ -21,14 +21,13 @@
           <!-- ############ -->
           <!-- ## Navbar ## -->
           <!-- ########### -->
-          <!-- navBar top  -->
 
       <div class="topnav">
         <% if user_signed_in? %>
           <div class="navigation">
 
               <a href="<%= items_path %>">Accueil</a>
-              <a href="<%= cart_path(current_user) %>" style="font-size:30px; position:absolute; top:8px; left:1200px">🛒</a>
+              <a href="<%= cart_path(current_user) %>" style="font-size:25px; position:absolute; top:4px; left:95%">🛒</a>
 
               <a href="#contact">Contact</a>
               <a href="#about">About</a>
@@ -39,7 +38,7 @@
           <% else %>
             <div class="navigation">
               <a href="<%= items_path %>">Accueil</a>
-              <a href="#" style="font-size:30px; position:absolute; top:8px; left:1200px">🛒</a>
+              <a href="#" style="font-size:25px; position:absolute; top:4px; left:95%">🛒</a>
 
               <a href="#contact">Contact</a>
               <a href="#about">About</a>
@@ -47,17 +46,18 @@
           <% end %>
         <% if user_signed_in? %>
             <div class="dropdown">
-              <button class="dropbtn">Connexion</button>
+              <button class="dropbtn"><%=current_user.email%></button>
                 <div class="dropdown-content" id = "dropbtn">
-                  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+                  <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete %>
+                  <%= link_to "Mon profile", edit_user_registration_path %>
                 </div>
             </div>
         <% else %>
           <div class="dropdown">
             <button class="dropbtn">Connexion</button>
               <div class="dropdown-content" id="dropbtn">
-                <%= link_to "Sign in", new_user_session_path %>
-                <%= link_to "Sign up", new_user_registration_path %>
+                <%= link_to "Se connecter ", new_user_session_path %>
+                <%= link_to "S'inscrire", new_user_registration_path %>
               </div>
           </div>
         <% end %>
