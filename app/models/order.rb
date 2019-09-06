@@ -7,6 +7,6 @@ class Order < ApplicationRecord
 	after_create :order_email_send
 
 	def order_email_send
-		UserMailer.order_email(self).deliver_now
+		UserMailer.order_email(self).deliver_later(wait: 40.second)
 	end
 end
