@@ -19,12 +19,10 @@ class ChargesController < ApplicationController
       currency: 'eur'
     })
      @cart = Cart.find(current_user.cart.id)
-      @cart.join_cart_items.destroy_all
+     @cart.join_cart_items.destroy_all
         redirect_to root_path
-     
      rescue Stripe::CardError => e
      flash[:error] = e.message
-     
-  end 
-end
 
+end
+end

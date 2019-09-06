@@ -3,7 +3,7 @@ class Item < ApplicationRecord
 	validates :description, presence: true, length: { in: 2..200 }
 	validates :price, presence: true
 	URL_REGEXP = /\A^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$\z/ix
-	validates :image_url, presence: true, format: { with: URL_REGEXP, message: 'You provided invalid URL'}
+	validates :image_url, presence: true , format: { with: URL_REGEXP, message: 'You provided invalid URL'}
 
 
 
@@ -12,4 +12,7 @@ class Item < ApplicationRecord
 
   has_many :join_cart_items
   has_many :carts, through: :join_cart_items
+
+	#ACTIVESTORAGE
+	has_one_attached  :itemavatars
 end

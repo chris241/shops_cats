@@ -49,7 +49,7 @@
               <button class="dropbtn"><%=current_user.email%></button>
                 <div class="dropdown-content" id = "dropbtn">
                   <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete %>
-                  <%= link_to "Mon profile", edit_user_registration_path %>
+                  <%= link_to "Mon profile", "/profil" %>
                 </div>
             </div>
         <% else %>
