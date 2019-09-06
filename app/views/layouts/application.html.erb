@@ -31,8 +31,8 @@
               <a href="<%= items_path %>">Accueil</a>
               <a href="<%= cart_path(current_user) %>" style="font-size:30px; position:absolute; top:8px; left:1200px">🛒</a>
 
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
+              <a href="/user/<%= current_user.id %>">Profil</a>
+              <a href="">About</a>
           </div>
           <div class="nbr_count">
             <%=session[:nbr] %>

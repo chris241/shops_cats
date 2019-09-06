@@ -1,16 +1,17 @@
 Rails.application.routes.draw do
-  get 'users/show'
+  # get 'users/show' => "user#show"
+  # get 'users/create'
 
       resources :carts, only:[:create, :show, :destroy]
       resources :items, only: [:show, :index]
       resources :charges
       resources :orders
-      resources :users, only: [:show] do
+      resources :user, only: [:show] do
           resources :avatars, only: [:create]
         end
 
       root 'items#index'
-        devise_for :users
+        devise_for :users 
         devise_scope :user do
             get '/users/sign_out'=> 'devise/sessions#destroy'
         end
