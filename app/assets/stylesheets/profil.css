@@ -11,9 +11,16 @@
 h3{
     position: absolute;
     top:13%;
-    left: 84%;
+    left: 85%;
     color: white;
 
+}
+.sizephoto{
+    position: absolute;
+    top:16%;
+    left: 84%;
+    font-size: 15px; 
+    color: white;
 }
 
 h1{
@@ -31,7 +38,14 @@ h1{
     color: white
 
 }
+.num{
 
+    position: absolute;
+    top:30%;
+    left: 22%;
+    color: white
+
+}
 .mail{
 
     position: absolute;
@@ -40,25 +54,28 @@ h1{
     color: white
 }
 
-.btnAjour{
-
-    position: absolute;
-    top:39%;
-    left: 22%;
-
-}
 
 .btnChoix{
     
     position: absolute;
-    top:35%;
-    left: 22%;
-    b
+    top:52%;
+    left: 79%;
+    
+}
+.btnAjour{
+
+    position: absolute;
+    top:57%;
+    left: 79%;
+
 }
 
 .btn-outline-success{
 
     position: absolute;
-    top:45%;
-    left: 22%;
+    top:62%;
+    left: 79%;
 }
+
+
+
