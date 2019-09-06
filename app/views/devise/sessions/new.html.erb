@@ -1,58 +1,33 @@
-<style type="">
-  p{
-      position:relative;
-      left:4px;
-      top:20px;
-           padding-left: 10px;
-    }
-    .h3{
-        color: white;
-    }
+<body id="background-siginin">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
 
-    .field{
-        color: white;
-    }
-    .container{
-      position: absolute;
-      background: black;
-      background: rgba(3,31,32,0.7) ;
-      top: 25% ;
-      left: 25% ;
-      margin-left:10px; 
-      border-radius: 40px;
- 
-    }
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "form-signin mt-3" }) do |f| %>
+        <h2 class="h3 mb-3 font-weight-normal text-center">LOG IN</h2>
 
-</style>
-  <body>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 offset-md-3">
+        <%= devise_error_messages! %>
+          <div class="field">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"%>
+          </div>
 
-            <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "form-signin mt-3" }) do |f| %>
-            <h2 class="h3 mb-3 font-weight-normal text-center">LOG IN</h2>
+          <div class="field">
+            <%= f.label :password %><br />
+            <%= f.password_field :password, autocomplete: "current-password", class: "form-control"%>
+          </div>
 
-            <%= devise_error_messages! %>
-              <div class="field">
-                <%= f.label :email %><br />
-                <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"%>
-              </div>
-
-              <div class="field">
-                <%= f.label :password %><br />
-                <%= f.password_field :password, autocomplete: "current-password", class: "form-control"%>
-              </div>
-
-              <% if devise_mapping.rememberable? %>
-                <div class="field">
-                  <%= f.check_box :remember_me %>
-                  <%= f.label :remember_me %>
-                </div>
-              <% end %>
-
-              <%= f.submit "Log in", class:"btn btn-outline-info" %><br><br>
+          <% if devise_mapping.rememberable? %>
+            <div class="field">
+              <%= f.check_box :remember_me %>
+              <%= f.label :remember_me %>
             </div>
           <% end %>
+
+          <%= f.submit "Log in", class:"btn btn-outline-info" %><br><br>
         </div>
-      </div>
-      
+      <% end %>
+    </div>
+  </div>   
+</body>
+

@@ -1,7 +1,22 @@
-<img class = "showcat" src="<%= @item.image_url%>" alt="">
-<div class="description">
-  <b>Nom: </b><%= @item.title%> <br><br>
-  <b>Prix: </b><%= @item.price%> <span>$</span> <br><br>
-  <b>Détails:</b> <%= @item.description%><br>
-  <%=link_to "ajouter au panier",carts_path ,class:"btn btn-primary", type:"button",method: :POST%>
-</div>
+<body id="view-img">
+  <div class="col-sm-4" id="show-center">
+    <div class="#" style="width: 34rem;">
+      <div class="card center" >
+
+        <img class = "card-img-top" src="<%= @item.image_url%>" alt="">
+        
+          <div class="card-body corp">
+              <b>Nom: </b><%= @item.title%> 
+              <div class="card-title">
+              <b>Prix: <span>$</span> </b><%= @item.price%>  
+              </div>
+            <div class="card-text">
+              <b>Détails:</b> <%= @item.description%>
+            </div>
+          </div>
+        </div>
+          <%=link_to "ajouter au panier",carts_path ,class:"btn btn-primary", type:"button",method: :POST%>
+      </div>
+    </div>
+  </div>
+</body>

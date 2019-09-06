@@ -3,18 +3,15 @@
 <!--########################-->
 
 <section class="container">
-  <div class="containerTitles">
-    
+  <div class="containerTitles"> 
       <button class="buttonload">
-        <i class="fa fa-spinner fa-spin"></i>Nos Chatons Mignions
+        <i class="fa fa-spinner fa-spin"></i>Nos Chatons Mignons
       </button>
-    
-
     <div class="d-flex flex-row">
       <div class="row">
         <%@items.each do |item|%>
           <div class="col-sm-4">
-            <div class="#" style="width: 20rem;">
+            <div style="width: 20rem;">
               <div class="card">
                 <img class="card-img-top" src="<%=item.image_url%>" alt="Card image">
                   <div class="card-body corp">
