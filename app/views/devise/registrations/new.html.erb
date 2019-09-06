@@ -1,10 +1,9 @@
 <body id="background-signup">
   <div class="container">
       <div class="col-md-6 offset-md-3">
-        <br><br><br>
-
+        <br>
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-        <h1 class="h3 mb-3 font-weight-normal text-center">Sign up</h1>
+        <h1 class="h3 mb-3 font-weight-normal text-center" id="su">Sign up</h1>
 
         <%= render "devise/shared/error_messages", resource: resource %>
 
