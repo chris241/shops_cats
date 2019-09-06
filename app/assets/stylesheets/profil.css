@@ -1,0 +1,45 @@
+#photo{
+    position: absolute;
+
+   top:19%;
+    left: 79%;
+    background-size: cover;
+    width: 30px;
+    height: 2px;
+}
+
+h3{
+    position: absolute;
+    top:13%;
+    left: 84%;
+
+}
+
+h1{
+    position: absolute;
+    top:10%;
+    left: 25%;
+}
+
+.entete{
+
+    position: absolute;
+    top:20%;
+    left: 22%;
+
+}
+
+.mail{
+
+    position: absolute;
+    top:25%;
+    left: 22%;
+}
+
+.btnAjour{
+
+    position: absolute;
+    top:35%;
+    left: 32%;
+
+}
