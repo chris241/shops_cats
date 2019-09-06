@@ -29,3 +29,11 @@ variable = Mailjet::Send.create(messages: [{
 )
 p variable.attributes['Messages']
 
+ActionMailer::Base.smtp_settings =   {
+    :address            => 'in-v3.mailjet.com',
+    :port               => 587,
+    :domain             => 'gmail.com', #you can also use google.com
+    :authentication     => :plain,
+    :user_name          => ENV['MAILJET_LOGIN'],
+    :password           => ENV['MAILJET_PWD']
+  }
