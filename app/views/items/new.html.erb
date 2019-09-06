@@ -14,10 +14,10 @@
 
 
     <center><%= label_tag 'price' %></center>
-    <center><%= text_field 'price', @item.price %></center>
+    <center><%= number_field_tag 'price', @item %></center>
     <br /> <br />
     <center><%= label_tag 'image_url' %></center>
-    <center><%= text_area_tag 'image_url', @item.image_url%></center>
+    <center><%= url_field_tag 'image_url', @item.image_url%></center>
      <br /> <br />
      <center><%= submit_tag "Create item" %></center>
 

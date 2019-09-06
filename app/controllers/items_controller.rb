@@ -14,17 +14,18 @@ class ItemsController < ApplicationController
     end
 
     def create
-    		@item = Item.new(title: params[:title],
-    		                description: params[:description],
-    		                price: params[:price],
+    		@item = Item.new(title: params[:title][0],
+    		                description: params[:description][0],
+    		                price: params[:price].to_f,
     		                image_url: params[:image_url],
     		                )
-    								if @item.save
-    									redirect_to root_path(@item.id)
-        						else
+	      if @item.save
+	    	  redirect_to root_path(@item.id)
+	        else
 
-        						end
+	        end
 		end
+
 
 		def destroy
 			@item = Item.find(params[:id])
