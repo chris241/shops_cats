@@ -1,24 +1,3 @@
-<div class="mail">Email: <%= current_user.email%></br></div>
-<a  href="<%= edit_user_registration_path%>" class="btn btn-outline-success my-2 my-sm-0" >Editer votre profil</a>
 
-<h1>Page Profil</h1>
+<h1>a propos de notre site</h1>
 
-<p class="entete">Bienvenue sur votre page édition utilisateur,</p>
-
-<p classe="num">votre numéro:<%=@user.id%></p>
-
-<%if @user.avatar.attached?%>
-    <div id ="photo"><%= image_tag @user.avatar, alt: 'avatar' %></div>
-<%else%>
-  <p>=== Il n'y a pas encore d'avatar lié à cet utilisateur, Veuillez l'inserer ===</p>
-<%end%>
-
-
-  <h3>Photo</h3>
-<%= form_tag user_avatars_path(@user), multipart: true do %>
-
-  <div class="btnChoix"><%= file_field_tag :avatar %></div>
-
-
-  <div class="btnAjour" ><%= submit_tag "mettre à jour" %></div>
-<% end %>

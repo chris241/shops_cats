@@ -1,0 +1,20 @@
+
+.cadre{
+
+    border: 1px solid bisque;
+}
+
+
+
+
+h2{
+    position: relative;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    top: 10px;
+}
+
+p{
+    color: blanchedalmond;
+    text-align: center
+}

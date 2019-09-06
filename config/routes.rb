@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # get 'users/show' => "user#show"
   # get 'users/create'
+  get 'home/about'
 
       resources :carts, only:[:create, :show, :destroy]
       resources :items, only: [:show, :index]

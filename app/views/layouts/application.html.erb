@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="kitUI.css">
     <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="icon" href="https://img.icons8.com/clouds/100/000000/cat.png">
   </head>
   <body>
@@ -31,8 +32,8 @@
               <a href="<%= items_path %>">Accueil</a>
               <a href="<%= cart_path(current_user) %>" style="font-size:30px; position:absolute; top:8px; left:1200px">🛒</a>
 
-              <a href="/user/<%= current_user.id %>">Profil</a>
-              <a href="">About</a>
+              <a href="/user/<%= current_user.id %>">Mon Profil</a>
+              <a href="/home/about">About</a>
           </div>
           <div class="nbr_count">
             <%=session[:nbr] %>
