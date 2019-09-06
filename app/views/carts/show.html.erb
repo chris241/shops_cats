@@ -24,7 +24,7 @@
           <td >Prix total</td>
           <td ><%=@count.to_f%> €</td>
           <td>
-            <%= link_to "Passer Commande", orders_path, class:"btn btn-success", method: :POST, style: "width:auto"%>
+            <%= link_to "Passer Commande", orders_path, class:"btn btn-success", method: :POST, style: "width:auto", remote:true%>
           </td>
         </tr>
 
