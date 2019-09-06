@@ -26,16 +26,19 @@ h3{
 h1{
     position: absolute;
     top:10%;
-    left: 25%;
-    color: aliceblue;
+    left: 35%;
+    color: rgb(216, 214, 110);
+    
 }
 
 .entete{
 
+    font-size: 150%;
     position: absolute;
     top:20%;
-    left: 22%;
+    left: 27%;
     color: white
+    
 
 }
 .num{
@@ -49,8 +52,8 @@ h1{
 .mail{
 
     position: absolute;
-    top:25%;
-    left: 22%;
+    top:27%;
+    left: 27%;
     color: white
 }
 

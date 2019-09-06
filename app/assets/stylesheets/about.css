@@ -18,7 +18,7 @@ h2{
     position: relative;
     color: rgb(253, 253, 253);
     text-align: center;
-    top: 10px;
+    top: 7px;
 }
 
 .texte{
@@ -28,12 +28,9 @@ h2{
     margin: 10%;
 }
 
-
-
 .titre{
 
     color: aquamarine;
-
 }
 h4{
     color: coral;
