@@ -6,14 +6,14 @@
       </div>
     <% end %>
     <label class="amount">
-      <span>Amount:<%=@count.to_f%></span>
+      <span>Amount:<%=session[:total_price].to_f%>&nbsp;€</span>
     </label>
   </article>
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
                 data-description="Paiement"
-                data-amount="<%=(@count.to_f)*100%>"
+                data-amount="<%=(session[:total_price].to_f)*100%>"
                 data-currency="eur"
                 data-locale="auto">
       </script>
