@@ -20,7 +20,7 @@ class ChargesController < ApplicationController
     })
      @cart = Cart.find(current_user.cart.id)
       @cart.join_cart_items.destroy_all
-        redirect_to cart_path(@cart.id)
+        redirect_to root_path
      
      rescue Stripe::CardError => e
      flash[:error] = e.message
