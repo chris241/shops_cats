@@ -19,5 +19,3 @@ require 'faker'
 				   image_url: cart[i])
 	end
 end	
-
-puts"ready"

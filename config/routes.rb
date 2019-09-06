@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   get '/profil', to: 'home#index'
 
  resources :carts, only:[:create, :show, :destroy]
- resources :items, only: [:show, :index]
+ resources :items, only: [:show, :index, :new, :create, :destroy] do
+    resources :itemavatars
+  end
+
  resources :charges
  resources :orders
 
